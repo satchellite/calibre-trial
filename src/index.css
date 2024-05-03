@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.background-primary {
+  background-color: #0769a7 !important;
+}
+.background-secondary {
+  background-color: #2784be !important;
+}
+.red{
+  color: red;
+  font-weight: 700;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quote-menu-phone {
+  align-content: center;
+  border: 2px solid #2e86de;
+  border-radius: 5px;
+  padding: 12px;
+}
+  .quote-menu-phone a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+  }
+  .quote-menu-phone span {
+    position: relative;
+    top: -6px;
+  }
+
+.masthead {
+  text-align: center;
+  color: #fff;
+}
+.masthead h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.masthead p {
+  font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+.masthead .masthead-top,
+.masthead .masthead-bottom{
+  padding: 20px;
+}
+
+.form-section {
+  background-color: #eee;
+  padding: 40px 5%;
+}
+.form-container label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.form-container input{
+  width: calc(100% - 12px);
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 30px;
+  padding: 9px 0 9px 12px;
+  font-size: 15px;
+}
+.form-container select {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 50px;
+  padding: 9px 0 9px 12px;
+  font-size: 15px;
+  background-color: #fff;
+}
+.form-container .react-datetime-picker {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.form-container .react-datetime-picker input {
+  border: none;
+}
+.form-container .react-datetime-picker__wrapper {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type=submit] {
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 22px;
+  border: none;
+  border-radius: 2px;
+  margin-top: 20px;
+}
+
+.disclaimer {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.disclaimer a {
+  color: #000;
+}
+.disclaimer p {
+  margin-bottom: 30px;
+}
+
+.testimonial-section .background-primary {
+  padding: 40px 20px;
+  color: #fff;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 700;
+}
+.testimonial-section .background-primary .featured-testimonial-body,
+.testimonial-section .background-primary .featured-testimonial-customer{
+  text-align: center;
+}
+.quote-close{
+  text-align: right;
+}
+.testimonial-stars {
+  text-align: center;
+  color: orange;
+}
+
+.footer-logo {
+  background-color: #222f3e;
+  padding: 40px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px){
+  .masthead .masthead-bottom {
+    display: none;
+  }
+  .form-container {
+    width: 50%;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-container input{
+    width: 90%;
+    height: 20px;
+  }
+  .form-container select{
+    width: 95%;
+    height: 40px;
+  }
+  .form-container .react-datetime-picker {
+    height: 40px;
+  }
+  .booking-date, 
+  .disclaimer {
+    grid-column: span 2;
+    width: 97%;
+  }
+  .quote-testimonial-body{
+    width: 50%;
+    margin: auto;
+  }
+}
